@@ -1,3 +1,10 @@
+:root {
+    --space-2: 0.75rem;
+    --space-3: 1rem;
+    --color-text: #59434a;
+    --color-accent: #d46a8c;
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -78,4 +85,10 @@ button:hover,
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
     }
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
 }
