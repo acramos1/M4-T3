@@ -54,3 +54,28 @@ nav a:focus {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+
+nav a,
+button,
+.button {
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+nav a:hover,
+button:hover,
+.button:hover {
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
